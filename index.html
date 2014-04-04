@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My MadLib Page</title>
+<script>
+function makeMadLib(form){
+var get_adj1 = form.adj1.value;
+var output = "The " + get_adj1 + " Cat";
+document.write(output);
+}
+</script>
+</head>
+<body>
+<form>
+Enter an adjective: <input type="text" name="adj1">
+<input type="submit" value="Submit" onClick="makeMadLib(this.form)">
+</form>
+</body>
+</html>
